@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Bank slips</h1>
+
+<div id="bank_slips">
+  <% @bank_slips.each do |bank_slip| %>
+    <%= render bank_slip %>
+    <p>
+      <%= link_to "Show this bank slip", bank_slip %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New bank slip", new_bank_slip_path %>

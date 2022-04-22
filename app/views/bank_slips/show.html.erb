@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @bank_slip %>
+
+<div>
+  <%= link_to "Edit this bank slip", edit_bank_slip_path(@bank_slip) %> |
+  <%= link_to "Back to bank slips", bank_slips_path %>
+
+  <%= button_to "Destroy this bank slip", @bank_slip, method: :delete %>
+</div>

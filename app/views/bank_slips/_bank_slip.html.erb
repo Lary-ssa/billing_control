@@ -1,0 +1,32 @@
+<div id="<%= dom_id bank_slip %>">
+  <p>
+    <strong>Bar code:</strong>
+    <%= bank_slip.bar_code %>
+  </p>
+
+  <p>
+    <strong>Client:</strong>
+    <%= bank_slip.client.name %>
+  </p>
+
+  <p>
+    <strong>Payer:</strong>
+    <%= bank_slip.payer.name %>
+  </p>
+
+  <p>
+    <strong>Due date:</strong>
+    <%= bank_slip.due_date %>
+  </p>
+
+  <p>
+    <strong>Amount:</strong>
+    <%= number_to_currency bank_slip.amount %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= bank_slip.description %>
+  </p>
+
+</div>
